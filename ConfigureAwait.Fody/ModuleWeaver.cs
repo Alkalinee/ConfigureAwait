@@ -77,6 +77,7 @@ public class ModuleWeaver : BaseModuleWeaver
     {
         yield return "netstandard";
         yield return "mscorlib";
+        yield return "System.Threading.Tasks";
     }
 
     void AddAwaitConfigToAsyncMethod(TypeDefinition type, bool value)
